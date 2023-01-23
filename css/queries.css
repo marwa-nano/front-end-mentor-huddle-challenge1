@@ -1,0 +1,52 @@
+/************************/
+/*950px=60em*/
+/************************/
+@media (max-width: 60em) {
+  html {
+    font-size: 100%;
+  }
+  body {
+    text-align: center;
+  }
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+  .community-img-box {
+    grid-column: 1/2;
+  }
+  .heading-tertiary {
+    font-size: 1.8rem;
+  }
+  .service-text-box {
+    padding: 0;
+  }
+  .service-description {
+    font-size: 1.2rem;
+  }
+  .container {
+    padding: 0 3.2rem;
+  }
+  .service-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .service-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+}
+
+/************************/
+/* BELOW 554 px =34  em*16 (smaller phones)*/
+/****************************/
+/* 550px=550/16= 34.375em */
+@media (max-width: 34em) {
+  html {
+    /* 8 px / 16 px = 0.5 = 50% */
+    font-size: 50%;
+  }
+  .newsletter:nth-child(2) {
+    grid-row: 1;
+  }
+  .footer {
+    text-align: left;
+  }
+}
